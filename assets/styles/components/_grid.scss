@@ -1,0 +1,111 @@
+.content-container{
+	@include standard;
+	@include clearfix;
+}
+
+.row{
+	@include clearfix;
+}
+
+.col-3{
+	@include span-columns(3 of 12);
+	min-height:1px;
+	@include media($tablet){
+		float:none;
+		width:100%;
+		margin-bottom:50px;
+	}
+	&.tablet-hold{
+		@include span-columns(3 of 12);
+		@include media($mobile){
+			width:100%;
+		}
+	}
+	&:last-child{
+		margin-bottom:0;
+	}
+}
+
+.col-4{
+	@include span-columns(4 of 12);
+	min-height:1px;
+	@include media($tablet){
+		float:none;
+		width:100%;
+		margin-bottom:50px;
+	}
+	&.tablet-hold{
+		@include span-columns(4 of 12);
+		@include media($mobile){
+			width:100%;
+		}
+	}
+	&:last-child{
+		margin-bottom:0;
+	}
+}
+
+.col-6{
+	@include span-columns(6 of 12);
+	min-height:1px;
+	@include media($tablet){
+		float:none;
+		width:100%;
+		margin-bottom:50px;
+	}
+	&.tablet-hold{
+		@include span-columns(6 of 12);
+		@include media($mobile){
+			width:100%;
+		}
+	}
+	&:last-child{
+		margin-bottom:0;
+	}
+}
+
+.col-8{
+	@include span-columns(8 of 12);
+	min-height:1px;
+	@include media($tablet){
+		float:none;
+		width:100%;
+		margin-bottom:50px;
+	}
+	&.tablet-hold{
+		@include span-columns(8 of 12);
+		@include media($mobile){
+			width:100%;
+		}
+	}
+	&:last-child{
+		margin-bottom:0;
+	}
+}
+
+.fw-col-2{
+	float:left;
+	width:50%;
+	@include media($mobile){
+		width:100%;
+		float:none;
+	}
+}
+
+.fw-col-3{
+	float:left;
+	width:25%;
+	@include media($mobile){
+		width:100%;
+		float:none;
+	}
+}
+
+.fw-col-4{
+	float:left;
+	width:calc(100% / 3);
+	@include media($mobile){
+		width:100%;
+		float:none;
+	}
+}

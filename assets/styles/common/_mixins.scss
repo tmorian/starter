@@ -1,0 +1,23 @@
+@mixin placeholder {
+	::-webkit-input-placeholder {@content}
+	:-moz-placeholder           {@content}
+	::-moz-placeholder          {@content}
+	:-ms-input-placeholder      {@content}
+}
+
+@mixin standard{
+	@include media($tablet){
+		width:$tablet-inner;
+	}
+	@include media($desktop){
+		width:$desktop-inner;
+	}
+	@include media($desktop-large){
+		width:$desktop-large-inner;
+	}
+	@include media($mobile){
+		width:$mobile-inner;
+		z-index: 1;
+	}
+	margin:0 auto;
+}

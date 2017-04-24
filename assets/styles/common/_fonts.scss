@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel'); //Cinzel
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond'); //Garamond
+
+$primary:'Cinzel';
+$secondary:'Garamond';
+$thin:100;
+$lite:300;
+$regular:400;
+$bold:700;
+
+$small:.7em;
+$title:1.2em;
+$big:1.8em;
+
+body{
+	font-family:$primary;
+	font-weight:$lite;
+}
+
+p{
+	font-family:$secondary;
+	letter-spacing:.5px;
+    line-height:1.3em;
+}

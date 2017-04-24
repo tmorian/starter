@@ -1,0 +1,29 @@
+//colors
+$color-white:#fff;
+$color-white-fade:rgba(255,255,255,.6);
+$color-black:#000;
+$color-black-soft:#595959;
+$color-gray:#272727;
+$color-brand:#011125;
+$color-brand-hover:#980310;
+
+$color-accent:#C17027;
+
+$color-gray-bg:#f5f5f5;
+
+//responsive settings
+$nav-break: (max-width 900px);
+$desktop-large: (min-width 1300px);
+$desktop: (min-width 901px);
+$tablet: (max-width 900px);
+$tablet-landscape: (max-width 1024px);
+$tablet-down: (max-width 900px);
+$not-mobile: (min-width 600px);
+$mobile: (max-width 600px);
+$mobile-small: (max-width 350px);
+
+//grid
+$desktop-large-inner:1200px;
+$desktop-inner:90vw;
+$tablet-inner:600px;
+$mobile-inner:300px;
